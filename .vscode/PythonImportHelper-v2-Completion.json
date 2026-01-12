@@ -1,0 +1,790 @@
+[
+    {
+        "label": "imutils",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "imutils",
+        "description": "imutils",
+        "detail": "imutils",
+        "documentation": {}
+    },
+    {
+        "label": "paths",
+        "importPath": "imutils",
+        "description": "imutils",
+        "isExtraImport": true,
+        "detail": "imutils",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "SVC",
+        "importPath": "sklearn.svm",
+        "description": "sklearn.svm",
+        "isExtraImport": true,
+        "detail": "sklearn.svm",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "cascade",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "cascade = 'haarcascade_frontalface_default.xml'\ndetector = cv2.CascadeClassifier(cascade)\nName = str(input(\"Enter your Name : \"))\nRoll_Number = int(input(\"Enter your Roll_Number : \"))\ndataset = 'dataset'\nsub_data = Name\npath = os.path.join(dataset, sub_data)\nif not os.path.isdir(path):\n    os.mkdir(path)\n    print(sub_data)",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "detector",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "detector = cv2.CascadeClassifier(cascade)\nName = str(input(\"Enter your Name : \"))\nRoll_Number = int(input(\"Enter your Roll_Number : \"))\ndataset = 'dataset'\nsub_data = Name\npath = os.path.join(dataset, sub_data)\nif not os.path.isdir(path):\n    os.mkdir(path)\n    print(sub_data)\ninfo = [str(Name), str(Roll_Number)]",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "Name",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "Name = str(input(\"Enter your Name : \"))\nRoll_Number = int(input(\"Enter your Roll_Number : \"))\ndataset = 'dataset'\nsub_data = Name\npath = os.path.join(dataset, sub_data)\nif not os.path.isdir(path):\n    os.mkdir(path)\n    print(sub_data)\ninfo = [str(Name), str(Roll_Number)]\nwith open('student.csv', 'a') as csvFile:",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "Roll_Number",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "Roll_Number = int(input(\"Enter your Roll_Number : \"))\ndataset = 'dataset'\nsub_data = Name\npath = os.path.join(dataset, sub_data)\nif not os.path.isdir(path):\n    os.mkdir(path)\n    print(sub_data)\ninfo = [str(Name), str(Roll_Number)]\nwith open('student.csv', 'a') as csvFile:\n    write = csv.writer(csvFile)",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "dataset",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "dataset = 'dataset'\nsub_data = Name\npath = os.path.join(dataset, sub_data)\nif not os.path.isdir(path):\n    os.mkdir(path)\n    print(sub_data)\ninfo = [str(Name), str(Roll_Number)]\nwith open('student.csv', 'a') as csvFile:\n    write = csv.writer(csvFile)\n    write.writerow(info)",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "sub_data",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "sub_data = Name\npath = os.path.join(dataset, sub_data)\nif not os.path.isdir(path):\n    os.mkdir(path)\n    print(sub_data)\ninfo = [str(Name), str(Roll_Number)]\nwith open('student.csv', 'a') as csvFile:\n    write = csv.writer(csvFile)\n    write.writerow(info)\ncsvFile.close()",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "path = os.path.join(dataset, sub_data)\nif not os.path.isdir(path):\n    os.mkdir(path)\n    print(sub_data)\ninfo = [str(Name), str(Roll_Number)]\nwith open('student.csv', 'a') as csvFile:\n    write = csv.writer(csvFile)\n    write.writerow(info)\ncsvFile.close()\nprint(\"Starting video stream...\")",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "info",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "info = [str(Name), str(Roll_Number)]\nwith open('student.csv', 'a') as csvFile:\n    write = csv.writer(csvFile)\n    write.writerow(info)\ncsvFile.close()\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\ntotal = 0\nwhile total < 500:",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "cam",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "cam = cv2.VideoCapture(0)\ntime.sleep(2.0)\ntotal = 0\nwhile total < 500:\n    print(total)\n    _, frame = cam.read()\n    img = imutils.resize(frame, width=400)\n    rects = detector.detectMultiScale(\n        cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), scaleFactor=1.1,\n        minNeighbors=5, minSize=(30, 30))",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "1_datasetCreation",
+        "description": "1_datasetCreation",
+        "peekOfCode": "total = 0\nwhile total < 500:\n    print(total)\n    _, frame = cam.read()\n    img = imutils.resize(frame, width=400)\n    rects = detector.detectMultiScale(\n        cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), scaleFactor=1.1,\n        minNeighbors=5, minSize=(30, 30))\n    for (x, y, w, h) in rects:\n        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)",
+        "detail": "1_datasetCreation",
+        "documentation": {}
+    },
+    {
+        "label": "dataset",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "dataset = \"dataset\"\nembeddingFile = \"D:\\\\Sejal\\\\code\\\\output\\\\embeddings.pickle\" #initial name for embedding file\nembeddingModel = \"D:\\\\Sejal\\\\code\\\\openface.nn4.small2.v1.t7\" #initializing model for embedding Pytorch\n#initialization of caffe model for face detection\nprototxt = \"model\\\\deploy.prototxt\"\nmodel =  \"D:\\\\Sejal\\\\code\\\\model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\n#loading caffe model for face detection\n#detecting face from Image via Caffe deep learning\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\n#loading pytorch model file for extract facial embeddings",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "embeddingFile",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "embeddingFile = \"D:\\\\Sejal\\\\code\\\\output\\\\embeddings.pickle\" #initial name for embedding file\nembeddingModel = \"D:\\\\Sejal\\\\code\\\\openface.nn4.small2.v1.t7\" #initializing model for embedding Pytorch\n#initialization of caffe model for face detection\nprototxt = \"model\\\\deploy.prototxt\"\nmodel =  \"D:\\\\Sejal\\\\code\\\\model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\n#loading caffe model for face detection\n#detecting face from Image via Caffe deep learning\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\n#loading pytorch model file for extract facial embeddings\n#extracting facial embeddings via deep learning feature extraction",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "embeddingModel",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "embeddingModel = \"D:\\\\Sejal\\\\code\\\\openface.nn4.small2.v1.t7\" #initializing model for embedding Pytorch\n#initialization of caffe model for face detection\nprototxt = \"model\\\\deploy.prototxt\"\nmodel =  \"D:\\\\Sejal\\\\code\\\\model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\n#loading caffe model for face detection\n#detecting face from Image via Caffe deep learning\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\n#loading pytorch model file for extract facial embeddings\n#extracting facial embeddings via deep learning feature extraction\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "prototxt",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "prototxt = \"model\\\\deploy.prototxt\"\nmodel =  \"D:\\\\Sejal\\\\code\\\\model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\n#loading caffe model for face detection\n#detecting face from Image via Caffe deep learning\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\n#loading pytorch model file for extract facial embeddings\n#extracting facial embeddings via deep learning feature extraction\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\n#gettiing image paths\nimagePaths = list(paths.list_images(dataset))",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "model =  \"D:\\\\Sejal\\\\code\\\\model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\n#loading caffe model for face detection\n#detecting face from Image via Caffe deep learning\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\n#loading pytorch model file for extract facial embeddings\n#extracting facial embeddings via deep learning feature extraction\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\n#gettiing image paths\nimagePaths = list(paths.list_images(dataset))\n#initialization",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "detector",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "detector = cv2.dnn.readNetFromCaffe(prototxt, model)\n#loading pytorch model file for extract facial embeddings\n#extracting facial embeddings via deep learning feature extraction\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\n#gettiing image paths\nimagePaths = list(paths.list_images(dataset))\n#initialization\nknownEmbeddings = []\nknownNames = []\ntotal = 0",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "embedder",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "embedder = cv2.dnn.readNetFromTorch(embeddingModel)\n#gettiing image paths\nimagePaths = list(paths.list_images(dataset))\n#initialization\nknownEmbeddings = []\nknownNames = []\ntotal = 0\nconf = 0.5\n#we start to read images one by one to apply face detection and embedding\nfor (i, imagePath) in enumerate(imagePaths):",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "imagePaths",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "imagePaths = list(paths.list_images(dataset))\n#initialization\nknownEmbeddings = []\nknownNames = []\ntotal = 0\nconf = 0.5\n#we start to read images one by one to apply face detection and embedding\nfor (i, imagePath) in enumerate(imagePaths):\n\tprint(\"Processing image {}\\{}\".format(i + 1,len(imagePaths)))\n\tname = imagePath.split(os.path.sep)[-2]",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "knownEmbeddings",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "knownEmbeddings = []\nknownNames = []\ntotal = 0\nconf = 0.5\n#we start to read images one by one to apply face detection and embedding\nfor (i, imagePath) in enumerate(imagePaths):\n\tprint(\"Processing image {}\\{}\".format(i + 1,len(imagePaths)))\n\tname = imagePath.split(os.path.sep)[-2]\n\timage = cv2.imread(imagePath)\n\timage = imutils.resize(image, width=600)",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "knownNames",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "knownNames = []\ntotal = 0\nconf = 0.5\n#we start to read images one by one to apply face detection and embedding\nfor (i, imagePath) in enumerate(imagePaths):\n\tprint(\"Processing image {}\\{}\".format(i + 1,len(imagePaths)))\n\tname = imagePath.split(os.path.sep)[-2]\n\timage = cv2.imread(imagePath)\n\timage = imutils.resize(image, width=600)\n\t(h, w) = image.shape[:2]",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "total = 0\nconf = 0.5\n#we start to read images one by one to apply face detection and embedding\nfor (i, imagePath) in enumerate(imagePaths):\n\tprint(\"Processing image {}\\{}\".format(i + 1,len(imagePaths)))\n\tname = imagePath.split(os.path.sep)[-2]\n\timage = cv2.imread(imagePath)\n\timage = imutils.resize(image, width=600)\n\t(h, w) = image.shape[:2]\n\t#converting image to blob for dnn face detection",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "conf",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "conf = 0.5\n#we start to read images one by one to apply face detection and embedding\nfor (i, imagePath) in enumerate(imagePaths):\n\tprint(\"Processing image {}\\{}\".format(i + 1,len(imagePaths)))\n\tname = imagePath.split(os.path.sep)[-2]\n\timage = cv2.imread(imagePath)\n\timage = imutils.resize(image, width=600)\n\t(h, w) = image.shape[:2]\n\t#converting image to blob for dnn face detection\n\timageBlob = cv2.dnn.blobFromImage(",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\tname",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\tname = imagePath.split(os.path.sep)[-2]\n\timage = cv2.imread(imagePath)\n\timage = imutils.resize(image, width=600)\n\t(h, w) = image.shape[:2]\n\t#converting image to blob for dnn face detection\n\timageBlob = cv2.dnn.blobFromImage(\n\t\tcv2.resize(image, (300, 300)), 1.0, (300, 300),(104.0, 177.0, 123.0), swapRB=False, crop=False)\n\t#setting input blob image\n\tdetector.setInput(imageBlob)\n\t#prediction the face",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\timage",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\timage = cv2.imread(imagePath)\n\timage = imutils.resize(image, width=600)\n\t(h, w) = image.shape[:2]\n\t#converting image to blob for dnn face detection\n\timageBlob = cv2.dnn.blobFromImage(\n\t\tcv2.resize(image, (300, 300)), 1.0, (300, 300),(104.0, 177.0, 123.0), swapRB=False, crop=False)\n\t#setting input blob image\n\tdetector.setInput(imageBlob)\n\t#prediction the face\n\tdetections = detector.forward()",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\timage",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\timage = imutils.resize(image, width=600)\n\t(h, w) = image.shape[:2]\n\t#converting image to blob for dnn face detection\n\timageBlob = cv2.dnn.blobFromImage(\n\t\tcv2.resize(image, (300, 300)), 1.0, (300, 300),(104.0, 177.0, 123.0), swapRB=False, crop=False)\n\t#setting input blob image\n\tdetector.setInput(imageBlob)\n\t#prediction the face\n\tdetections = detector.forward()\n\tif len(detections) > 0:",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\timageBlob",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\timageBlob = cv2.dnn.blobFromImage(\n\t\tcv2.resize(image, (300, 300)), 1.0, (300, 300),(104.0, 177.0, 123.0), swapRB=False, crop=False)\n\t#setting input blob image\n\tdetector.setInput(imageBlob)\n\t#prediction the face\n\tdetections = detector.forward()\n\tif len(detections) > 0:\n\t\ti = np.argmax(detections[0, 0, :, 2])\n\t\tconfidence = detections[0, 0, i, 2]\n\t\tif confidence > conf:",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\tdetections",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\tdetections = detector.forward()\n\tif len(detections) > 0:\n\t\ti = np.argmax(detections[0, 0, :, 2])\n\t\tconfidence = detections[0, 0, i, 2]\n\t\tif confidence > conf:\n\t\t\t#ROI range of interest\n\t\t\tbox = detections[0, 0, i, 3:7] * np.array([w, h, w, h])\n\t\t\t(startX, startY, endX, endY) = box.astype(\"int\")\n\t\t\tface = image[startY:endY, startX:endX]\n\t\t\t(fH, fW) = face.shape[:2]",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ti",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\t\ti = np.argmax(detections[0, 0, :, 2])\n\t\tconfidence = detections[0, 0, i, 2]\n\t\tif confidence > conf:\n\t\t\t#ROI range of interest\n\t\t\tbox = detections[0, 0, i, 3:7] * np.array([w, h, w, h])\n\t\t\t(startX, startY, endX, endY) = box.astype(\"int\")\n\t\t\tface = image[startY:endY, startX:endX]\n\t\t\t(fH, fW) = face.shape[:2]\n\t\t\tif fW < 20 or fH < 20:\n\t\t\t\tcontinue",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tconfidence",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\t\tconfidence = detections[0, 0, i, 2]\n\t\tif confidence > conf:\n\t\t\t#ROI range of interest\n\t\t\tbox = detections[0, 0, i, 3:7] * np.array([w, h, w, h])\n\t\t\t(startX, startY, endX, endY) = box.astype(\"int\")\n\t\t\tface = image[startY:endY, startX:endX]\n\t\t\t(fH, fW) = face.shape[:2]\n\t\t\tif fW < 20 or fH < 20:\n\t\t\t\tcontinue\n\t\t\t#image to blob for face",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tbox",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\t\t\tbox = detections[0, 0, i, 3:7] * np.array([w, h, w, h])\n\t\t\t(startX, startY, endX, endY) = box.astype(\"int\")\n\t\t\tface = image[startY:endY, startX:endX]\n\t\t\t(fH, fW) = face.shape[:2]\n\t\t\tif fW < 20 or fH < 20:\n\t\t\t\tcontinue\n\t\t\t#image to blob for face\n\t\t\tfaceBlob = cv2.dnn.blobFromImage(face, 1.0 / 255, (96, 96), (0, 0, 0), swapRB=True, crop=False)\n\t\t\t#facial features embedder input image face blob\n\t\t\tembedder.setInput(faceBlob)",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tface",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\t\t\tface = image[startY:endY, startX:endX]\n\t\t\t(fH, fW) = face.shape[:2]\n\t\t\tif fW < 20 or fH < 20:\n\t\t\t\tcontinue\n\t\t\t#image to blob for face\n\t\t\tfaceBlob = cv2.dnn.blobFromImage(face, 1.0 / 255, (96, 96), (0, 0, 0), swapRB=True, crop=False)\n\t\t\t#facial features embedder input image face blob\n\t\t\tembedder.setInput(faceBlob)\n\t\t\tvec = embedder.forward()\n\t\t\tknownNames.append(name)",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tfaceBlob",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\t\t\tfaceBlob = cv2.dnn.blobFromImage(face, 1.0 / 255, (96, 96), (0, 0, 0), swapRB=True, crop=False)\n\t\t\t#facial features embedder input image face blob\n\t\t\tembedder.setInput(faceBlob)\n\t\t\tvec = embedder.forward()\n\t\t\tknownNames.append(name)\n\t\t\tknownEmbeddings.append(vec.flatten())\n\t\t\ttotal += 1\nprint(\"Embedding:{0} \".format(total))\ndata = {\"embeddings\": knownEmbeddings, \"names\": knownNames}\nf = open(embeddingFile, \"wb\")",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tvec",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "\t\t\tvec = embedder.forward()\n\t\t\tknownNames.append(name)\n\t\t\tknownEmbeddings.append(vec.flatten())\n\t\t\ttotal += 1\nprint(\"Embedding:{0} \".format(total))\ndata = {\"embeddings\": knownEmbeddings, \"names\": knownNames}\nf = open(embeddingFile, \"wb\")\nf.write(pickle.dumps(data))\nf.close()\nprint(\"Process Completed\")",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "data = {\"embeddings\": knownEmbeddings, \"names\": knownNames}\nf = open(embeddingFile, \"wb\")\nf.write(pickle.dumps(data))\nf.close()\nprint(\"Process Completed\")",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "2_preprocessingEmbeddings",
+        "description": "2_preprocessingEmbeddings",
+        "peekOfCode": "f = open(embeddingFile, \"wb\")\nf.write(pickle.dumps(data))\nf.close()\nprint(\"Process Completed\")",
+        "detail": "2_preprocessingEmbeddings",
+        "documentation": {}
+    },
+    {
+        "label": "embeddingFile",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "embeddingFile = \"output\\\\embeddings.pickle\"\n#New & Empty at initial\nrecognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nprint(\"Loading face embeddings...\")\ndata = pickle.loads(open(embeddingFile, \"rb\").read())\nprint(\"Encoding labels...\")\nlabelEnc = LabelEncoder()\nlabels = labelEnc.fit_transform(data[\"names\"])\nprint(\"Training model...\")",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "recognizerFile",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "recognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nprint(\"Loading face embeddings...\")\ndata = pickle.loads(open(embeddingFile, \"rb\").read())\nprint(\"Encoding labels...\")\nlabelEnc = LabelEncoder()\nlabels = labelEnc.fit_transform(data[\"names\"])\nprint(\"Training model...\")\nrecognizer = SVC(C=1.0, kernel=\"linear\", probability=True)\nrecognizer.fit(data[\"embeddings\"], labels)",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "labelEncFile",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "labelEncFile = \"output\\\\le.pickle\"\nprint(\"Loading face embeddings...\")\ndata = pickle.loads(open(embeddingFile, \"rb\").read())\nprint(\"Encoding labels...\")\nlabelEnc = LabelEncoder()\nlabels = labelEnc.fit_transform(data[\"names\"])\nprint(\"Training model...\")\nrecognizer = SVC(C=1.0, kernel=\"linear\", probability=True)\nrecognizer.fit(data[\"embeddings\"], labels)\nf = open(recognizerFile, \"wb\")",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "data = pickle.loads(open(embeddingFile, \"rb\").read())\nprint(\"Encoding labels...\")\nlabelEnc = LabelEncoder()\nlabels = labelEnc.fit_transform(data[\"names\"])\nprint(\"Training model...\")\nrecognizer = SVC(C=1.0, kernel=\"linear\", probability=True)\nrecognizer.fit(data[\"embeddings\"], labels)\nf = open(recognizerFile, \"wb\")\nf.write(pickle.dumps(recognizer))\nf.close()",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "labelEnc",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "labelEnc = LabelEncoder()\nlabels = labelEnc.fit_transform(data[\"names\"])\nprint(\"Training model...\")\nrecognizer = SVC(C=1.0, kernel=\"linear\", probability=True)\nrecognizer.fit(data[\"embeddings\"], labels)\nf = open(recognizerFile, \"wb\")\nf.write(pickle.dumps(recognizer))\nf.close()\nf = open(labelEncFile, \"wb\")\nf.write(pickle.dumps(labelEnc))",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "labels = labelEnc.fit_transform(data[\"names\"])\nprint(\"Training model...\")\nrecognizer = SVC(C=1.0, kernel=\"linear\", probability=True)\nrecognizer.fit(data[\"embeddings\"], labels)\nf = open(recognizerFile, \"wb\")\nf.write(pickle.dumps(recognizer))\nf.close()\nf = open(labelEncFile, \"wb\")\nf.write(pickle.dumps(labelEnc))\nf.close()",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "recognizer",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "recognizer = SVC(C=1.0, kernel=\"linear\", probability=True)\nrecognizer.fit(data[\"embeddings\"], labels)\nf = open(recognizerFile, \"wb\")\nf.write(pickle.dumps(recognizer))\nf.close()\nf = open(labelEncFile, \"wb\")\nf.write(pickle.dumps(labelEnc))\nf.close()",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "f = open(recognizerFile, \"wb\")\nf.write(pickle.dumps(recognizer))\nf.close()\nf = open(labelEncFile, \"wb\")\nf.write(pickle.dumps(labelEnc))\nf.close()",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "3_trainingFaceML",
+        "description": "3_trainingFaceML",
+        "peekOfCode": "f = open(labelEncFile, \"wb\")\nf.write(pickle.dumps(labelEnc))\nf.close()",
+        "detail": "3_trainingFaceML",
+        "documentation": {}
+    },
+    {
+        "label": "embeddingModel",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "embeddingModel = \"openface.nn4.small2.v1.t7\"\nembeddingFile = \"output\\\\embeddings.pickle\"\nrecognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"Loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "embeddingFile",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "embeddingFile = \"output\\\\embeddings.pickle\"\nrecognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"Loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "recognizerFile",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "recognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"Loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "labelEncFile",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "labelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"Loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "conf",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "conf = 0.5\nprint(\"Loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nbox = []",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "prototxt",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "prototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nbox = []\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "model = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nbox = []\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "detector",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "detector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"Loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nbox = []\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "embedder",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "embedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nbox = []\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "recognizer",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "recognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nbox = []\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "le",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "le = pickle.loads(open(labelEncFile, \"rb\").read())\nbox = []\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]\n    imageBlob = cv2.dnn.blobFromImage(cv2.resize(frame, (300, 300)), 1.0, (300, 300),(104.0, 177.0, 123.0), swapRB=False, crop=False)",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "box",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "box = []\nprint(\"Starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]\n    imageBlob = cv2.dnn.blobFromImage(cv2.resize(frame, (300, 300)), 1.0, (300, 300),(104.0, 177.0, 123.0), swapRB=False, crop=False)\n    detector.setInput(imageBlob)",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "cam",
+        "kind": 5,
+        "importPath": "4_recognizingPerson",
+        "description": "4_recognizingPerson",
+        "peekOfCode": "cam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]\n    imageBlob = cv2.dnn.blobFromImage(cv2.resize(frame, (300, 300)), 1.0, (300, 300),(104.0, 177.0, 123.0), swapRB=False, crop=False)\n    detector.setInput(imageBlob)\n    detections = detector.forward()\n    for i in range(0, detections.shape[2]):",
+        "detail": "4_recognizingPerson",
+        "documentation": {}
+    },
+    {
+        "label": "flatten",
+        "kind": 2,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "def flatten(lis):\n    for item in lis:\n        if isinstance(item, Iterable) and not isinstance(item, str):\n            for x in flatten(item):\n                yield x\n        else:\n            yield item\nembeddingFile = \"output\\\\embeddings.pickle\"\nembeddingModel = \"openface_nn4.small2.v1.t7\"\nrecognizerFile = \"output\\\\recognizer.pickle\"",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "embeddingFile",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "embeddingFile = \"output\\\\embeddings.pickle\"\nembeddingModel = \"openface_nn4.small2.v1.t7\"\nrecognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"[INFO] loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "embeddingModel",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "embeddingModel = \"openface_nn4.small2.v1.t7\"\nrecognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"[INFO] loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "recognizerFile",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "recognizerFile = \"output\\\\recognizer.pickle\"\nlabelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"[INFO] loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "labelEncFile",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "labelEncFile = \"output\\\\le.pickle\"\nconf = 0.5\nprint(\"[INFO] loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "conf",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "conf = 0.5\nprint(\"[INFO] loading face detector...\")\nprototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nRoll_Number = \"\"",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "prototxt",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "prototxt = \"model\\\\deploy.prototxt\"\nmodel = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nRoll_Number = \"\"\nbox = []\nprint(\"[INFO] starting video stream...\")",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "model = \"model\\\\res10_300x300_ssd_iter_140000.caffemodel\"\ndetector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nRoll_Number = \"\"\nbox = []\nprint(\"[INFO] starting video stream...\")\ncam = cv2.VideoCapture(0)",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "detector",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "detector = cv2.dnn.readNetFromCaffe(prototxt, model)\nprint(\"[INFO] loading face recognizer...\")\nembedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nRoll_Number = \"\"\nbox = []\nprint(\"[INFO] starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "embedder",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "embedder = cv2.dnn.readNetFromTorch(embeddingModel)\nrecognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nRoll_Number = \"\"\nbox = []\nprint(\"[INFO] starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "recognizer",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "recognizer = pickle.loads(open(recognizerFile, \"rb\").read())\nle = pickle.loads(open(labelEncFile, \"rb\").read())\nRoll_Number = \"\"\nbox = []\nprint(\"[INFO] starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "le",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "le = pickle.loads(open(labelEncFile, \"rb\").read())\nRoll_Number = \"\"\nbox = []\nprint(\"[INFO] starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "Roll_Number",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "Roll_Number = \"\"\nbox = []\nprint(\"[INFO] starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]\n    imageBlob = cv2.dnn.blobFromImage(",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "box",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "box = []\nprint(\"[INFO] starting video stream...\")\ncam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]\n    imageBlob = cv2.dnn.blobFromImage(\n        cv2.resize(frame, (300, 300)), 1.0, (300, 300),",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "cam",
+        "kind": 5,
+        "importPath": "5_recognizingPersonwithCSVDatabase",
+        "description": "5_recognizingPersonwithCSVDatabase",
+        "peekOfCode": "cam = cv2.VideoCapture(0)\ntime.sleep(2.0)\nwhile True:\n    _, frame = cam.read()\n    frame = imutils.resize(frame, width=600)\n    (h, w) = frame.shape[:2]\n    imageBlob = cv2.dnn.blobFromImage(\n        cv2.resize(frame, (300, 300)), 1.0, (300, 300),\n        (104.0, 177.0, 123.0), swapRB=False, crop=False)\n    detector.setInput(imageBlob)",
+        "detail": "5_recognizingPersonwithCSVDatabase",
+        "documentation": {}
+    },
+    {
+        "label": "print_menu",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def print_menu():\n    print(\"\\n\" + \"=\"*40)\n    print(\"   Face Recognition System Menu\")\n    print(\"=\"*40)\n    print(\"1. Create Dataset (1_datasetCreation.py)\")\n    print(\"2. Preprocess Embeddings (2_preprocessingEmbeddings.py)\")\n    print(\"3. Train Face ML Model (3_trainingFaceML.py)\")\n    print(\"4. Recognize Person (4_recognizingPerson.py)\")\n    print(\"5. Recognize Person with CSV (5_recognizingPersonwithCSVDatabase.py)\")\n    print(\"6. Exit\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "run_script",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def run_script(script_name):\n    \"\"\"Runs a python script in a subprocess.\"\"\"\n    script_path = os.path.join(os.getcwd(), script_name)\n    if not os.path.exists(script_path):\n        print(f\"[ERROR] File not found: {script_name}\")\n        return\n    print(f\"\\n[INFO] Starting {script_name}...\")\n    try:\n        # Use sys.executable to ensure we use the same python interpreter\n        result = subprocess.run([sys.executable, script_name], check=False)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    while True:\n        print_menu()\n        choice = input(\"Enter your choice (1-6): \").strip()\n        if choice == '1':\n            run_script(\"1_datasetCreation.py\")\n        elif choice == '2':\n            run_script(\"2_preprocessingEmbeddings.py\")\n        elif choice == '3':\n            run_script(\"3_trainingFaceML.py\")",
+        "detail": "main",
+        "documentation": {}
+    }
+]
